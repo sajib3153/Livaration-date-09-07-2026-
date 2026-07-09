@@ -1,0 +1,252 @@
+/* ==========================
+   Google Font
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ==========================
+Navbar
+========================== */
+
+.navbar{
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:12px;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#ffc107 !important;
+}
+
+/* ==========================
+Hero Section
+========================== */
+
+.hero{
+    height:90vh;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+        url("../image/hero.jpg") center center/cover no-repeat;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+}
+
+.hero .btn{
+    padding:12px 35px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.hero .btn:hover{
+    transform:translateY(-4px);
+}
+
+/* ==========================
+Section
+========================== */
+
+section{
+    padding:80px 0;
+}
+
+h2{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* ==========================
+Cards
+========================== */
+
+.card{
+    border:none;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.card img{
+    height:240px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.2);
+}
+
+.card-body{
+    text-align:center;
+}
+
+.card-body h4{
+    font-weight:600;
+}
+
+.btn-outline-danger{
+    border-radius:30px;
+    padding:8px 22px;
+}
+
+/* ==========================
+Statistics
+========================== */
+
+.counter{
+    color:#dc3545;
+    font-size:55px;
+    font-weight:bold;
+}
+
+section .col-md-3 p{
+    font-size:18px;
+}
+
+/* ==========================
+Quote
+========================== */
+
+.bg-danger h2{
+    font-style:italic;
+    font-weight:600;
+}
+
+/* ==========================
+Footer
+========================== */
+
+footer h4{
+    font-weight:700;
+}
+
+footer i{
+    cursor:pointer;
+    transition:.3s;
+}
+
+footer i:hover{
+    color:#ffc107;
+    transform:scale(1.2);
+}
+
+/* ==========================
+Image
+========================== */
+
+img{
+    max-width:100%;
+}
+
+/* ==========================
+Responsive
+========================== */
+
+@media(max-width:991px){
+
+.hero{
+    height:70vh;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+    height:65vh;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.counter{
+    margin-top:25px;
+    font-size:40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+}
+
+/* photograp page */
+
+/* Gallery */
+
+.gallery-img{
+    height:260px;
+    width:100%;
+    object-fit:cover;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+
+.filter-btn.active{
+    background:#dc3545;
+    color:#fff;
+}
